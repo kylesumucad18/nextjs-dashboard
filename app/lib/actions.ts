@@ -108,7 +108,7 @@ export async function updateInvoice(id: string, prevState: State, formData: Form
     redirect('/dashboard/invoices');
 }
 
-export async function deleteInvoice(id: string) {
+export async function deleteInvoice(id: string): Promise<void> {
     // Throwing an intentional error to test the error.tsx file
     // throw new Error('Failed to Delete Invoice');
 
